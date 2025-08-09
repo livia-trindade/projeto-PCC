@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArgumentAI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header id="inicio">
+    <div class="header-content">
+      <img src="logoex.png" alt="Logo Redatech" class="logo" />
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como funciona?</a>
+        <a href="temas.html">Temas</a>
+        <a href="correcao.html" class="blue-button">Corrigir</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção principal -->
+  <main>
+    <div class="content-wrapper">
+      <div class="dica-box">
+        <img src="image01.png" alt="Correção imediata" class="dica-image" />
+      </div>
+
+      <div class="text-content">
+        <h1 id="gigante">Correção de<br>Redação do<br>ENEM grátis</h1>
+        <h2 id="sub">✨ Correção em minutos, com feedback completo das 5 competências.  
+        <br>✍️ Bora mandar bem? #RedaçãoNaVeia #EducaçãoParaTodos</h2>
+
+        <div class="button-container">
+          <a href="correcao.html">Enviar redação</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção Sobre -->
+    <section class="yellow-section" id="sobre">
+      <div class="sobre-texto">
+        <p>
+          A Redatech nasceu para oferecer um ensino de qualidade para quem mais precisa. Seja do interior, da cidade ou da zona rural, seu futuro importa — e sua redação também.
+        </p>
+        <p>
+          Esse projeto foi idealizado e desenvolvido por alunos do <strong>Instituto Federal Baiano – Campus Guanambi</strong>, como parte de um Projeto Integrador que une tecnologia, educação e impacto social.
+        </p>
+        <p>
+          Nosso objetivo é democratizar o acesso ao ensino da redação, tornando a <strong>preparação para o ENEM mais acessível, inteligente e humana.</strong>
+        </p>
+      </div>
+      <div class="imagem-sobre">
+        <img src="image02.png" alt="Estudante feliz segurando caderno" />
+      </div>
+    </section>
+
+    <!-- Seção Como Funciona -->
+    <section class="como-funciona" id="como-funciona">
+      <h2 class="titulo-secao">Como funciona?</h2>
+      <div class="passos">
+        <div class="passo">
+          <span>1</span>
+          <p>Escreva ou cole sua redação no sistema</p>
+        </div>
+        <div class="passo">
+          <span>2</span>
+          <p>Receba uma correção imediata e objetiva</p>
+        </div>
+        <div class="passo">
+          <span>3</span>
+          <p>Veja sua nota por competência e comentários</p>
+        </div>
+        <div class="passo">
+          <span>4</span>
+          <p>Pratique, evolua e mande melhor a cada tentativa!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Redatech — Todos os direitos reservados. Desenvolvido por estudantes do IF Baiano – Campus Guanambi.
+  </footer>
+
+  <script>
+    // Menu mobile
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.header-content nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

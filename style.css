@@ -1,0 +1,382 @@
+/* ======= RESET E BASE ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ======= CABEÇALHO ======= */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 12%;
+  background-color: white;
+  position: relative;
+}
+
+.logo {
+  width: 170px;
+  z-index: 100;
+}
+
+/* Menu desktop */
+.header-content nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.header-content nav a {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.header-content nav a:hover {
+  color: #059ed1;
+}
+
+.blue-button {
+  background-color: #059ed1;
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: white !important;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.blue-button:hover {
+  background-color: #037aa2;
+}
+
+/* Menu mobile */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+
+/* ======= HERO SECTION ======= */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.dica-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  animation: fadeInLeft 0.8s ease;
+}
+
+.dica-image {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.dica-image:hover {
+  transform: rotate(-2deg) scale(1.02);
+}
+
+/* ======= TEXTO DO HERO ======= */
+.text-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  animation: fadeInRight 0.8s ease;
+}
+
+#gigante {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+#sub {
+  font-size: clamp(16px, 2vw, 18px);
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  background-color: #f2b505;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 16px 32px;
+  transition: 0.3s;
+  width: fit-content;
+  box-shadow: 0 4px 15px rgba(242, 181, 5, 0.3);
+}
+
+.button-container:hover {
+  background-color: #d39e03;
+  transform: translateY(-3px);
+}
+
+.button-container a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ======= SEÇÃO AMARELA - SOBRE ======= */
+.yellow-section {
+  background-color: #F2B505;
+  padding: 80px 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px ;
+}
+
+.sobre-texto {
+  flex: 1;
+  min-width: 300px;
+  color: #000;
+  font-size: clamp(16px, 2.5vw, 20px);
+  animation: fadeInUp 0.8s ease;
+}
+
+.sobre-texto strong {
+  font-weight: 700;
+}
+
+.imagem-sobre img {
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.imagem-sobre img:hover {
+  transform: rotate(2deg) scale(1.02);
+}
+
+/* ======= COMO FUNCIONA ======= */
+.como-funciona {
+  background-color: #f0f8ff;
+  padding: 100px 12%;
+  text-align: center;
+}
+
+.titulo-secao {
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 60px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.passos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.passo {
+  background-color: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease;
+}
+
+.passo:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.passo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #059ed1;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.passo p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* ======= RODAPÉ ======= */
+footer {
+  background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      
+}
+
+/* ======= ANIMAÇÕES ======= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ======= RESPONSIVO ======= */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 15px 10%;
+  }
+
+  /* Menu mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-content nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .header-content nav.active {
+    right: 0;
+  }
+
+  .header-content nav a {
+    font-size: 20px;
+  }
+
+  /* Animação do menu hamburguer */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  /* Conteúdo principal */
+  .content-wrapper {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .yellow-section {
+    padding: 60px 20px;
+    margin: 40px 0;
+  }
+
+  .sobre-texto, .imagem-sobre img {
+    animation: fadeInUp 0.8s ease;
+  }
+
+  .imagem-sobre img {
+    margin-top: 30px;
+  }
+
+  .como-funciona {
+    padding: 60px 20px;
+  }
+
+  .passos {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .passo {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #gigante {
+    font-size: 32px;
+  }
+
+  #sub {
+    font-size: 16px;
+  }
+
+  .button-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .yellow-section {
+    padding: 40px 0px;
+  }
+}
